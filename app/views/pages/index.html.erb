@@ -1,6 +1,17 @@
-<p>jQuery稼働テスト</p>
-<script type="text/javascript">
-  $(document).ready(function() {
-    $("p").text("jQuery稼働テスト(稼働中)");
-  });
-</script
+<!DOCTYPE html>
+<html>
+<head>
+<title>Introduction to jQuery</title>
+<script src="https://code.jquery.com/jquery-3.3.1.js"
+integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+</script>
+<script>
+$(document).ready(function(){
+$("p").css("color", "red");
+});
+</script>
+</head>
+<body>
+<p>段落タグのテキストをjQueryで赤にしています。</p>
+</body>
+</html>
