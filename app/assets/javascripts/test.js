@@ -1,3 +1,3 @@
-$(function() {
- $("h1").css("color", "red");
+$(document).ready(function() {
+ $("p").css("color", "blue");
 });

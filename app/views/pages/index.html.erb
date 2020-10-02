@@ -2,7 +2,34 @@
 alert('Hello World!');
 </script>
 
-<p>Hello World!</p>
 <script type="text/javascript">
-$("p").css("color", "red");
+$(document).ready(function() {
+ $("p").css("color", "blue");
+});
 </script>
+<p>Hello World!</p>
+
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+<script type="text/javascript">
+  $(function() {
+    $('#slide_bar').hover(
+      // スライドバーにカーソルを合わせると、左にスライドし、メニューが現れる
+      function(){
+        $(this).animate({'marginRight':'170px'},500);
+      },
+      // 合わせていなければ、メニューが隠れる
+      function () {
+        $(this).animate({'marginRight':'0'},500);
+      }
+    );
+  });
+</script>
+
+<div id="slide_bar">
+  <ul>
+    <li><a href="#">スライド1</a></li>
+    <li><a href="#">スライド2</a></li>
+    <li><a href="#">スライド3</a></li>
+    <li><a href="#">スライド4</a></li>
+  </ul>
+</div>

@@ -1,0 +1,27 @@
+#slide_bar {
+    margin: 0;
+    padding: 0;
+    background: #f00;
+    position: fixed;
+    right: -170px;
+    cursor: pointer;
+    width: 200px;
+}
+
+#slide_bar ul {
+    margin: 0;
+    padding-left: 30px;
+    list-style: none;
+}
+
+#slide_bar li {
+    margin: 5px;
+    padding: 0;
+}
+
+#slide_bar a {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: white;
+}
