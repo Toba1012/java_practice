@@ -33,3 +33,20 @@ $(document).ready(function() {
     <li><a href="#">スライド4</a></li>
   </ul>
 </div>
+
+<script type="text/javascript">
+$(function() {
+    var i = 2;
+    $('button').on('click', function() {
+        $('ul').append('<li>sample' + i + '</li>');
+        i++;
+    });
+});
+</script>
+
+<button>Add</button>
+<ul>
+  <li>sample1</li>
+</ul>
+
+

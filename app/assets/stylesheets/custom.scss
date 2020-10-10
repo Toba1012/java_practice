@@ -25,3 +25,19 @@
     text-decoration: none;
     color: white;
 }
+
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-start;
+}
+
+ul li {
+    text-align: center;
+    color: #fff;
+    margin: 0 1.0em 0 0;
+    width: 80px;
+    height: 50px;
+    line-height: 50px;
+    background: green;
+}
