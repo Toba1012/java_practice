@@ -36,17 +36,21 @@ $(document).ready(function() {
 
 <script type="text/javascript">
 $(function() {
-    var i = 2;
+    var i = 4;
     $('button').on('click', function() {
-        $('ul').append('<li>sample' + i + '</li>');
-        i++;
+        if(i > 0) {
+            $('ul').prepend('<li>sample' + i + '</li>');
+            i--;    
+        }
     });
 });
 </script>
 
+
 <button>Add</button>
+
 <ul>
-  <li>sample1</li>
+  <li>sample5</li>
 </ul>
 
 
