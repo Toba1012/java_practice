@@ -36,21 +36,19 @@ $(document).ready(function() {
 
 <script type="text/javascript">
 $(function() {
-    var i = 4;
     $('button').on('click', function() {
-        if(i > 0) {
-            $('ul').prepend('<li>sample' + i + '</li>');
-            i--;    
-        }
+        $('ul li:last-child').remove();
     });
 });
 </script>
 
-
-<button>Add</button>
-
+<button>Remove</button>
 <ul>
-  <li>sample5</li>
+    <li>sample1</li>
+    <li>sample2</li>
+    <li>sample3</li>
+    <li>sample4</li>
+    <li>sample5</li>
 </ul>
 
 
